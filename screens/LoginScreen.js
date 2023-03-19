@@ -2,6 +2,7 @@ import { auth } from "../firebase";
 import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button, Input, Image } from "react-native-elements";
+import logo from "../assets/logo.jpg"
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -25,10 +26,8 @@ const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Image
-        source={{
-          uri:
-            "https://blog.mozilla.org/internetcitizen/files/2018/08/signal-logo.png",
-        }}
+        source={logo
+          }
         style={{ width: 200, height: 200 }}
       />
       <View style={styles.inputContainer}>
